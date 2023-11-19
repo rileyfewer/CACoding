@@ -10,12 +10,13 @@ import java.beans.PropertyChangeSupport;
 
 public class ClearViewModel extends ViewModel {
 
-    public final String CLEAR_LABEL = "Clear";
+    public final String CLEAR_LABEL = "Clear all users";
+    public static final String CLEAR_BUTTON_LABEL = "Clear";
 
     private ClearState state = new ClearState();
     public ClearViewModel() {super("clear");}
 
-    public void setState(ClearState state) {this.state = state}
+    public void setState(ClearState state) {this.state = state;}
 
     private final PropertyChangeSupport support = new PropertyChangeSupport(this);
     public void firePropertyChanged() {
