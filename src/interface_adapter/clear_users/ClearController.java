@@ -9,12 +9,10 @@ public class ClearController {
 
     public ClearController(ClearInputData clearUseCaseInteractor){
         this.clearUseCaseInteractor = (ClearInputBoundary) clearUseCaseInteractor;
-
     }
 
     public void execute() {
         ClearInputData clearInputData = new ClearInputData();
-
         clearUseCaseInteractor.execute(clearInputData);
     }
 }
